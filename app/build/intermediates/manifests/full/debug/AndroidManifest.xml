@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.depaul.csc472.lifesaver"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="23" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="edu.depaul.csc472.lifesaver.PatientRegistration"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="edu.depaul.csc472.lifesaver.DonorRegistration"
+            android:label="@string/title_activity_donor_registration" >
+        </activity>
+        <activity
+            android:name="edu.depaul.csc472.lifesaver.PatientProfile"
+            android:label="@string/title_activity_patient_profile" >
+        </activity>
+        <activity
+            android:name="edu.depaul.csc472.lifesaver.DonorProfile"
+            android:label="@string/title_activity_donor_profile" >
+        </activity>
+        <activity
+            android:name="edu.depaul.csc472.lifesaver.PatientStories"
+            android:label="@string/title_activity_patient_stories" >
+        </activity>
+        <activity
+            android:name="edu.depaul.csc472.lifesaver.ViewFullStory"
+            android:label="@string/title_activity_view_full_story" >
+        </activity>
+        <activity
+            android:name="edu.depaul.csc472.lifesaver.Registration"
+            android:label="@string/title_activity_registration" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

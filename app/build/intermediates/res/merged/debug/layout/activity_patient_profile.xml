@@ -1,0 +1,156 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/red2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.depaul.csc472.lifesaver.PatientProfile">
+
+    <TableRow android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient Profile"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            android:textStyle=""
+            />
+    </TableRow>
+    <TableRow android:gravity="center" android:layout_marginTop="10dp">
+        <ImageView android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/icon"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Name:"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:id="@+id/edit_pname"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:background="@color/white"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_pname"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_pname"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "edit"
+            android:id="@+id/name_edit"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue1"
+            android:textSize="18dp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Type Of Blood:"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:id="@+id/edit_pbloodtype"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/txt_pbloodtype"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_pbloodtype"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "edit"
+            android:paddingLeft="10dp"
+            android:id="@+id/edit_bloodtype"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue1"
+            android:textSize="18dp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "Donation Center:"
+            android:layout_column="0"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:id="@+id/edit_pdonation"
+            android:layout_column="1"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:inputType="text"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/txt_pdonation"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:id="@+id/txt_pdonation"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "edit"
+            android:id="@+id/edit_donation"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blue1"
+            android:textSize="18dp"/>
+    </TableRow>
+
+</TableLayout>
+<!-- From: file:/Users/lavanyathirupur/Downloads/LifeSaver/app/src/main/res/layout/activity_patient_profile.xml -->
